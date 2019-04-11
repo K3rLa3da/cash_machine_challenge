@@ -1,0 +1,13 @@
+body {
+  background: #f4f4fa;
+  overflow: auto;
+  height: auto !important;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+.cash-machine-container {
+  width: 1024px;
+  min-height: 768px;
+  margin: 20px auto;
+}

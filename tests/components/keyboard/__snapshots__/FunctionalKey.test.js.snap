@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test render FunctionalKey 1`] = `
+<div
+  className="functional-key-container"
+>
+  <div
+    className="keyboard-key green"
+    onClick={[MockFunction]}
+  >
+    Accept
+  </div>
+</div>
+`;

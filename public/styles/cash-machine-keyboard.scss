@@ -1,0 +1,52 @@
+.keyboard-container {
+  width: 400px;
+  height: 320px;
+  margin: 50px auto;
+  display: flex;
+}
+
+.numeric-keyboard {
+  width: 240px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.functional-keyboard {
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+}
+
+.numeric-key-container {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+.functional-key-container {
+  width: 160px;
+  height: 80px;
+}
+
+.keyboard-key {
+  border: 1px solid grey;
+  font-size: 28px;
+  margin: 2.5px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 70px;
+  background-color: #dbdbdb;
+  cursor: pointer;
+  &.red {
+    color: red;
+  }
+  &.orange {
+    color: orange;
+  }
+  &.green {
+    color: green;
+  }
+  &:hover {
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  }
+}
