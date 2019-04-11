@@ -1,7 +1,7 @@
 .keyboard-container {
   width: 400px;
   height: 320px;
-  margin: 47px auto;
+  margin: 50px auto;
   display: flex;
 }
 
@@ -35,7 +35,7 @@
   text-align: center;
   vertical-align: middle;
   line-height: 70px;
-  background-color: #dbdbdb;
+  background-color: #c7c7c7;
   cursor: pointer;
   &.red {
     color: red;
