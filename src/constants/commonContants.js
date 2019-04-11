@@ -1,6 +1,6 @@
 /* Messages */
 const WELCOME_MESSAGE = 'Please, enter amount you want to withdraw. Available notes $ 100,00; $ 50,00; $ 20,00 or $ 10,00';
-const CASH_SUM__ERROR = 'Selected amount is incorrect. Please, check it and try again';
+const CASH_SUM__ERROR = 'Selected amount is incorrect. Please, check it and try again.';
 export const displayMessages = {
     WELCOME_MESSAGE,
     CASH_SUM__ERROR
