@@ -1,4 +1,7 @@
-@import "common-app-styles";
-@import "cash-mashine-display";
-@import "cash-machine-keyboard";
-@import "spinner";
+body {
+  background: #f4f4fa;
+  overflow: auto;
+  height: auto !important;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}

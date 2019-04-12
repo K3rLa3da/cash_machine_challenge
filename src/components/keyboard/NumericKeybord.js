@@ -6,6 +6,8 @@ import NumericKey from './NumericKey';
 
 import {setNewAmountToWithdraw} from '../../actions/actions';
 
+import styles from '../../../public/styles/cash-machine-keyboard.scss'
+
 
 const NumericKeyboard = props => {
     const {cashAmount, displayMessage, actions: {setNewAmountToWithdraw}} = props;
@@ -24,7 +26,7 @@ const NumericKeyboard = props => {
     );
 
     return (
-        <div className="numeric-keyboard">
+        <div className={styles.numeric}>
             {generateKeyboard()}
         </div>
     );

@@ -8,6 +8,8 @@ import {apiGetCashForWithdrawal, setNewAmountToWithdraw} from '../../actions/act
 
 import {buttonNames} from '../../constants/commonContants';
 
+import styles from '../../../public/styles/cash-machine-keyboard.scss'
+
 const {ACCEPT_BUTTON, CANCEL_BUTTON, CORRECT_BUTTON} = buttonNames;
 
 const FunctionalKeyboard = props => {
@@ -40,7 +42,7 @@ const FunctionalKeyboard = props => {
         />)
     );
     return (
-        <div className="functional-keyboard">
+        <div className={styles.functional}>
             {generateKeyboard()}
         </div>
     );

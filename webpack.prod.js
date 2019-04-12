@@ -2,6 +2,9 @@ const path = require('path');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const TerserPlugin = require('terser-webpack-plugin');// It is better than Uglifyjs plugin and be default for webpack 5
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+
 
 module.exports = {
     entry: {
@@ -12,10 +15,15 @@ module.exports = {
         filename: '[name].[hash].js',
         publicPath: '/'
     },
-    devServer: {
-        port: 3001,
-        historyApiFallback: true,
-        open: true
+    optimization: {
+        minimizer: [
+            new TerserPlugin({
+                cache: true,
+                parallel: true,
+                sourceMap: false
+            }),
+            new OptimizeCSSAssetsPlugin({})
+        ]
     },
     module: {
         rules: [
@@ -27,12 +35,11 @@ module.exports = {
             {
                 test: /\.(scss|css)$/,
                 use: [
-                    'style-loader',
+                    MiniCssExtractPlugin.loader,
                     {
                         loader: 'css-loader',
                         options: {
-                            modules: true,
-                            localIdentName: "[name]__[local]___[hash:base64:5]"
+                            modules: true
                         }
                     },
                     'postcss-loader',

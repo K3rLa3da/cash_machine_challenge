@@ -1,8 +1,10 @@
 import React from 'react';
 import {connect} from 'react-redux';
 
+import styles from '../../../public/styles/cash-mashine-display.scss'
+
 const MessageDisplay = ({displayMessage}) => (
-    <div className="message-display-container">
+    <div className={styles.message}>
         {displayMessage}
     </div>
 );
